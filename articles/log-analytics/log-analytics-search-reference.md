@@ -600,7 +600,7 @@ Returns the first document found for every unique value of the given field.
 
 **Example**
 
-	Type=Event | sort TimeGenerated DESC | Dedup EventID
+	Type=Event | Dedup EventID | sort TimeGenerated DESC
 
 The above example returns one  event  (the latest since we use DESC on TimeGenerated) per EventID
 
